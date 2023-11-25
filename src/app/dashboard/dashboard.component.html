@@ -1,5 +1,7 @@
-<div class="container mt-4">
-    <div class="row">
+<h1 class="titulo">Dashboard</h1>
+<div class="card">
+  <div class="container mt-4">
+    <div class="row justify-content-center">
         <div class="col-md-12">
             <table class="table table-light table-fondo">
                 <thead class="table-fondo">
@@ -15,7 +17,7 @@
                     <th scope="col" class="table-fondo">Carrera</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody class="tbody-fondo">
                   <tr *ngFor="let usuario of UsuarioInfo">
                     <td class="texto">{{usuario.primerNombre}} {{usuario.segundoNombre}}</td>
                     <td class="texto">{{usuario.primerApellido}} {{usuario.segundoApellido}}</td>
@@ -24,33 +26,12 @@
                     <td class="texto">{{usuario.noIdentificacion}}</td>
                     <td class="texto">{{usuario.genero}}</td>
                     <td class="texto">{{usuario.edad}}</td>
-                    <td class="texto">{{usuario.fechaNacimiento}}</td>
+                    <td class="texto">{{usuario.fechaNacimiento | date: 'yyyy/MM/dd'}}</td>
                     <td class="texto">{{usuario.carrera}}</td>
                   </tr>
                 </tbody>
               </table>
         </div>
-        <div class="col-md-12 d-flex justify-content-center">
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item" >
-                        <a 
-                        class="page-link"
-                        >
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
+</div>
 </div>

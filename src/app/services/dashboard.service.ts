@@ -4,6 +4,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Usuario, UsuarioResponse } from '../domain/listar';
 
 
 
@@ -21,8 +22,7 @@ export class DashboardService {
     this.baseUrlAuth = environment.urlauth;
     this.urlImage = environment.urlImage;
   }
-
-
+  
   /**
    * Metodo para listar los usuarios en el deshboard
    * @returns Observable<ListaUsuarios>
@@ -31,4 +31,5 @@ export class DashboardService {
     const url = this.baseUrlApi + '/egresados/listar';
     return this.http.get(url);
   }
+  
 }

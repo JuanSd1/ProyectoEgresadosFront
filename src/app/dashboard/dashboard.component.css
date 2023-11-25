@@ -1,44 +1,68 @@
-.header{
-    width: 100%;
-    background: #004884;
-    position: relative;
-    z-index: 1;
-}
-
 .table-fondo {
     width: 1200px; /* Quita "Fixed" del valor */
     height: 56px; /* Quita "Fixed" del valor */
     padding: 5px;
     border-radius: 5px;
-    background: #16981a;
+    background: #077c0a;
+    border-collapse: collapse;
 
     font-size: 16px;
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
 }
 
-.pagination {
-  margin: 0; /* Elimina cualquier margen */
+thead{
+  border-bottom: solid 3px #000000;
 }
 
-/* Estilo para los números de página */
-.page-link {
-    color: #000; /* Color de texto negro para los números de página */
-    text-align: right; /* Alinea el texto a la derecha */
-    padding: 0; /* Elimina el relleno para eliminar el margen */
-    font-size: 16px; /* Tamaño de fuente */
-    padding: 2px 10px; /* Espaciado interno para el contenido del botón */
-  }
-  
-  /* Estilo para la página seleccionada */
-  .page-link.current-page {
-    background-color: #3366CC;
-    color: #fff; /* Color de texto blanco */
-    border-radius: 50%;
-    padding: 2px 10px; /* Espaciado interno para el contenido del botón */
-    margin: 0; /* Elimina el margen */
-    font-size: 16px; /* Tamaño de fuente */
-  }
+tr:nth-child(event){
+  background-color: #882727;
+}
+
+.tbody-fondo {
+  background: #ffffff; /* Cambia este valor al color que desees para el fondo del tbody */
+  color: black;
+  border: solid 1px #b7b7b7;
+}
+
+.texto{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 85px;
+    height: 36px;
+    color: #555555;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-centered {
+  width: 100%; /* Opcional: Utiliza el ancho que desees */
+  max-width: 1200px; /* Ancho máximo para la tabla */
+  margin: 0 auto; /* Centrar la tabla */
+}
+
+.card{
+  width: 100%;
+  max-width: 1202px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 0;
+  margin-top: 101.5px;
+}
+
+.titulo {
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
