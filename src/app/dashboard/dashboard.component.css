@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    background: #004884;
+    position: relative;
+    z-index: 1;
+}
+
+.table-fondo {
+    width: 1200px; /* Quita "Fixed" del valor */
+    height: 56px; /* Quita "Fixed" del valor */
+    padding: 5px;
+    border-radius: 5px;
+    background: #16981a;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pagination {
+  margin: 0; /* Elimina cualquier margen */
+}
+
+/* Estilo para los números de página */
+.page-link {
+    color: #000; /* Color de texto negro para los números de página */
+    text-align: right; /* Alinea el texto a la derecha */
+    padding: 0; /* Elimina el relleno para eliminar el margen */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 2px 10px; /* Espaciado interno para el contenido del botón */
+  }
+  
+  /* Estilo para la página seleccionada */
+  .page-link.current-page {
+    background-color: #3366CC;
+    color: #fff; /* Color de texto blanco */
+    border-radius: 50%;
+    padding: 2px 10px; /* Espaciado interno para el contenido del botón */
+    margin: 0; /* Elimina el margen */
+    font-size: 16px; /* Tamaño de fuente */
+  }
