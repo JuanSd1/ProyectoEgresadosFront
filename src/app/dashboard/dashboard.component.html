@@ -3,27 +3,32 @@
         <div class="col-md-12">
             <table class="table table-light table-fondo">
                 <thead class="table-fondo">
-                    <tr>
-                        <th scope="col" class="table-fondo">Tipo de documento <br>de identidad</th>
-                        <th scope="col" class="table-fondo">Número de documento <br>de identidad</th>
-                        <th scope="col" class="table-fondo">Nombre</th>
-                        <th scope="col" class="table-fondo">Tipo - cargo</th>
-                        <th scope="col" class="table-fondo">Fecha inicial</th>
-                        <th scope="col" class="table-fondo">Fecha final</th>
-                        <th scope="col" class="table-fondo">Acción</th>
-                    </tr>
+                  <tr>
+                    <th scope="col" class="table-fondo">Nombres</th>
+                    <th scope="col" class="table-fondo">Apellidos</th>
+                    <th scope="col" class="table-fondo">Telefono</th>
+                    <th scope="col" class="table-fondo">Email</th>
+                    <th scope="col" class="table-fondo">Identificación</th>
+                    <th scope="col" class="table-fondo">Genero</th>
+                    <th scope="col" class="table-fondo">Edad</th>
+                    <th scope="col" class="table-fondo">Fecha nacimiento</th>
+                    <th scope="col" class="table-fondo">Carrera</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="texto">CC</td>
-                        <td class="texto">115321</td>
-                        <td class="texto">Juan</td>
-                        <td class="texto">Si</td>
-                        <td class="texto">hoy</td>
-                        <td class="texto">Mañana</td>
-                    </tr>
+                  <tr *ngFor="let usuario of UsuarioInfo">
+                    <td class="texto">{{usuario.primerNombre}} {{usuario.segundoNombre}}</td>
+                    <td class="texto">{{usuario.primerApellido}} {{usuario.segundoApellido}}</td>
+                    <td class="texto">{{usuario.telefono}}</td>
+                    <td class="texto">{{usuario.email}}</td>
+                    <td class="texto">{{usuario.noIdentificacion}}</td>
+                    <td class="texto">{{usuario.genero}}</td>
+                    <td class="texto">{{usuario.edad}}</td>
+                    <td class="texto">{{usuario.fechaNacimiento}}</td>
+                    <td class="texto">{{usuario.carrera}}</td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
         </div>
         <div class="col-md-12 d-flex justify-content-center">
             <nav aria-label="Page navigation">
